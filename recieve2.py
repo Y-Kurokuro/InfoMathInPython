@@ -38,7 +38,7 @@ while d < L:    #複合化鍵を求める
 
 n = p * q
 pl = (c ** d) % n   #平文を数字で複合化する
-print(pl)
+
 
 rad = []    #複号化したものを27進数にする
 while pl != 0:
@@ -46,7 +46,7 @@ while pl != 0:
     pl = pl // 27
 rad.reverse()
 
-print(rad)
+
 
 pchar = []
 for i in range(len(rad)):    #平文に直す
