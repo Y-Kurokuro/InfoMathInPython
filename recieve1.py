@@ -2,11 +2,11 @@ import random
 
 def prime(n):   #素数判定関数をつくる
     i = 2
-    while i < a:
-        if a % i == 0:
+    while i < n:
+        if n % i == 0:
             break
         i += 1
-    if i == a:
+    if i == n:
         return True
     else:
         return False
