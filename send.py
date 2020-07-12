@@ -1,6 +1,3 @@
-import math
-import random
-
 #平文は27文字のいずれかの組み合わせとする
 chara = ["_", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
