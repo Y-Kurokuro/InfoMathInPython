@@ -26,7 +26,7 @@ rad = []    #暗号化したものを27進数にする
 while c != 0:
     rad.append(c % 27)
     c = c // 27
-rad.reverse
+rad.reverse()
 
 cchar = []
 for i in range(len(rad)):    #暗号文に直す
