@@ -18,4 +18,8 @@ while (p == q) or not prime(p) or not prime(q):   #p == q または　p が素�
 #p,qは互いに素な素数なので、最大公約数は1
 
 n = p * q
+
+print(p)    #受信側はこれを記憶しておく
+print(q)
+
 print(n)    #これを送信者側に渡す
