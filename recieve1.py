@@ -13,8 +13,8 @@ def prime(n):   #素数判定関数をつくる
 
 p, q = 0, 0
 while (p == q) or not prime(p) or not prime(q):   #p == q または　p が素数でない　または　q が素数でない間続ける (p != q かつ p 素数 q 素数 ならば抜ける)
-    p = random.randint(10**3, 10**4)
-    q = random.randint(10**3, 10**4)
+    p = random.randint(10**4, 10**5)
+    q = random.randint(10**4, 10**5)
 #p,qは互いに素な素数なので、最大公約数は1
 
 n = p * q
