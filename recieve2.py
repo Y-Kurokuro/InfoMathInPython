@@ -26,15 +26,21 @@ print("q:",end="")
 q = int(input())
 
 L = ((p-1) * (q-1)) / math.gcd(p-1,q-1) #L*gcd = 元の数の積になるので、ここから最小公倍数を求める
+l = L
 
 e = 65537   #Wikipedia「RSA暗号」より
 d = 1
-while d < L:    #複合化鍵を求める
-    if (d * e) % L == 1:
-        break
-    d += 1
 
+#複合化鍵を求める
+x = 0
+d = 1
+while L != 0:
+    quo = e // L
+    e, L = L, e % L
+    x, d = d - quo * x, x
 
+d %= l
+d = int(d)
 
 n = p * q
 #平文を数字で複合化する
