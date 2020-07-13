@@ -34,7 +34,7 @@ d = 1
 #複合化鍵を求める
 x = 0
 d = 1
-while L != 0:
+while L != 0:   #拡張ユークリッドの互除法
     quo = e // L
     e, L = L, e % L
     x, d = d - quo * x, x
