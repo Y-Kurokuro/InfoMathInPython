@@ -20,7 +20,8 @@ print("n:",end="")
 n = int(input())    #受信者側から受け取ったnを入力
 e = 65537   #Wikipedia「RSA暗号」より
 
-c = (p ** e) % n    #暗号化
+#暗号化
+c = pow(p, e, n)
 
 rad = []    #暗号化したものを27進数にする
 while c != 0:
